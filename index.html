@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html-1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-item">
+          <div class="logo">TechnoLog</div>
+          <ul class="nav-link">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <button class="contact-btn">Hire us</button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="section-1">
+      <div class="welcome">
+        <h1>
+          Build your <br />
+          Business <br />
+          with Technolog
+        </h1>
+        <p>You've got the well. We've got the way</p>
+        <button class="start">Start free trial</button>
+      </div>
+      <div class="vector-1">
+        <img src="/images/section2-img.png" alt="girl with laptop" />
+      </div>
+    </section>
+    <section id="section-2">
+      <div class="vector-2">
+        <img src="/images/section1-img.png" alt="boy having dreams" />
+      </div>
+      <div class="idea">
+        <h1>
+          Ideas that go <br />
+          Beyond Borders
+        </h1>
+        <p>Welcome your visitors with elegance</p>
+        <button class="meet">meet Dev'ops</button>
+      </div>
+    </section>
+    <section id="section-3">
+      <div class="services">
+        <div class="overlay-hero">
+          <div class="hero-text">
+            <h1>
+              Think ahead and boost<br />
+              your online business growth
+            </h1>
+            <p>
+              With tons of features at your fingertips, let your creativity
+              loose
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-4">
+      <div class="advice-set">
+        <div class="advice">
+          <img src="https://img.icons8.com/ios/50/000000/goal.png" />
+          <p>Profitability is the primary goal of all business ventures</p>
+        </div>
+        <div class="advice">
+          <img
+            src="https://img.icons8.com/ios/50/000000/people-working-together.png"
+          />
+          <p>Large team driven by industry leading experts</p>
+        </div>
+        <div class="advice">
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/globe--v2.png"
+          />
+          <p>Connect with millions in the largest buisness network</p>
+        </div>
+      </div>
+    </section>
+    <section id="section-5">
+      <div class="projects-heading">
+        <h1>Projects We've recently worked on</h1>
+      </div>
+      <div class="projects">
+        <a
+          href="https://eatic.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/Screenshot (30).png" alt=""
+        /></a>
+        <a
+          href="https://reaper.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/Screenshot (31).png" alt=""
+        /></a>
+      </div>
+    </section>
+
+    <section id="section-6">
+      <div class="final">
+        <p class="final-text">
+          The best day to join Technolog was one year ago, <br />The second best
+          is today!
+        </p>
+        <button class="final-btn">Have a Chat with us</button>
+      </div>
+      <hr />
+      <div class="footer">
+        <ul>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Pricing</li></a>
+          <a href="#"><li>Terms of Use</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Blog</li></a>
+        </ul>
+      </div>
+      <p class="footer-text">
+        © Copyright by
+        <a href="https://nimish.netlify.app/">Nimish Dubey</a> Use for learning
+        . Don't use to teach. Don't claim as your own product.
+      </p>
+    </section>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Be the Jack of Caribbean <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form action="POST" class="modal__form" data-netlify="true">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="john doe" />
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="johndoe321@gmail.com" />
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id=""
+          cols="35"
+          rows="10"
+          placeholder="your message..."
+        ></textarea>
+        <div data-netlify-recaptcha="true"></div>
+        <button type="submit" class="btn">next &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

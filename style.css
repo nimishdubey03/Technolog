@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 5rem;
+}
+
+nav {
+  background-color: rgb(238, 241, 241);
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 2rem;
+}
+
+.nav-link {
+  display: flex;
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link li a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(45, 46, 42);
+}
+.contact-btn {
+  height: 2.5rem;
+  width: 7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.contact-btn:hover {
+  background: linear-gradient(to right, #252f3a, #305c63);
+  transition: 1s ease-in-out;
+}
+#section-1 {
+  /* height: 100vh; */
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.welcome {
+  width: 500px;
+}
+.welcome h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.welcome p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.welcome button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: white;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.welcome button:hover {
+  background: linear-gradient(to right, #252f3a, #305c63);
+}
+#section-1 img {
+  width: 600px;
+}
+
+#section-2 {
+  /* height: 100vh; */
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#section-2 img {
+  width: 800px;
+}
+#section-2 p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.idea h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.idea button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: white;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.idea button:hover {
+  background: linear-gradient(to right, #252f3a, #305c63);
+}
+
+.services {
+  margin-top: 100px;
+  height: 500px;
+  background: url(/images/man\ with\ phone.jfif);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.overlay-hero {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-text {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  margin-bottom: 50px;
+  font-size: 4rem;
+}
+.hero-text p {
+  font-size: 20px;
+}
+#section-4 {
+  margin: auto 15rem;
+}
+
+.advice-set {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.advice {
+  padding: 2rem 4rem;
+  width: 400px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.advice img {
+  margin-bottom: 1rem;
+}
+.advice p {
+  font-weight: 800;
+}
+.projects-heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.projects {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects a {
+  margin: auto 2rem;
+}
+
+.projects img {
+  width: 500px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.projects img:hover {
+  transform: scale(1.04);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 101;
+  transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal__form {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: column;
+  max-height: 500px;
+}
+
+.modal__form label {
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.modal__form input {
+  border: 2px solid #4e5052;
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: none;
+}
+.modal__form textarea {
+  border: 2px solid #4e5052;
+  border-radius: 3px;
+  padding: 0.5rem;
+  resize: vertical;
+  max-height: 200px;
+  min-height: 100px;
+  outline: none;
+}
+.modal__form .btn {
+  margin: 2rem auto;
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #02bba5, #91cc2b);
+}
+.modal__form .btn:hover {
+  background: linear-gradient(to right, #02a592, #8bb145);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+#section-6 {
+  background-color: rgb(94, 94, 94);
+}
+hr {
+  border: 1px solid #252f3a;
+}
+.final {
+  width: 100%;
+
+  vertical-align: middle;
+  text-align: center;
+}
+.final p {
+  font-size: 3rem;
+  color: #e2e2e2;
+  font-weight: 800;
+  padding: 4rem 0;
+}
+.final-btn {
+  margin-bottom: 5rem;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #02bba5, #91cc2b);
+}
+
+.final-btn:hover {
+  background: linear-gradient(to right, #02a592, #8bb145);
+}
+.footer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 0;
+  width: 60rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  list-style: none;
+}
+.footer ul a {
+  text-decoration: none;
+  color: white;
+}
+.footer-text {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  padding-bottom: 2rem;
+}
+.footer-text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
